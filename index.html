@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Cat quiz</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title> Cat quiz </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=EB+Garamond&family=Sansita+Swashed&display=swap" rel="stylesheet">
+  </head>
+
+ <style>
+  body {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(35deg, #CCFFFF, #FFCCCC);}
+  
+  .inactive{display:none}
+   active{display:block}
+  .control-div{ text-align: center}
+
+  button:hover{
+  background-color:#FAE2F5;
+  color:#EA8AD6;
+  font-size: 30px;}
+
+  .heading{
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  text-align: center;}
+
+  .whitebox{
+  background-color: rgba(255,255,255,0.7);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  position:relative;
+  top:60px;
+  box-shadow: 0 50px 50px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);}
+ </style>
+
+ <body>
+  <header class="heading">
+  <h1> Welcome! <br>  Do you want to know what cat you are? <br> <span style='color:red;'>Take the quiz below! </h1>
+  </header>
+  
+  <main>
+    <div style="min-height:250px;text-align:center" >
+      <img id="img_current" style="border: solid;border-color: red;border-width: 5px;height: 230px;width: 515px;">
+    </div>
+
+   <button id="btn_last" ><--</button>
+   <button id="btn_next" style="float:right">--></button>
+<br><br><br>
+
+   <div style='text-align:center;'>
+     <button id="btn_quiz">Take the quiz now</button>
+
+   <div class="inactive" id="q1"><span style="font-size:25px; font-weight:bold;">If you were a cat, how would you greet your master when he/she returns home?</span>
+<br><br>
+
+     <button id="a1">Barely acknowledge the master & do a silent fart</button>
+<br><br>
+     <button id="a2">Meow continuously to get the master's attention</button>
+<br><br>
+     <button id="a3">Get some toys & urge the master to play with you</button>
+<br><br>
+   </div>
+
+   </div>
+<br><br>
+   <div class="inactive " id="div-result" style="min-height:250px;text-align:center" >
+     <span class="heading"> Your result:</span>
+<br><br>
+     <img id="img_result" style="
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;">
+<br>
+     <div style="width:80%;display: inline-table;" class="whitebox">
+    <label class="heading" id="lb_result1" ></label>
+<br>
+    <label style="font-size:22px" id="lb_result2"</label>
+     </span>
+   </div>
+     
+     <footer style="padding-top: 100px;">
+        <span class="heading"> Comment… </span>
+        <form>
+          <label  style="font-size:22px" for="message">Feel free to leave any comments or messages to me by filling the box below.</label><br>
+        <textarea id="message" class="textarea" name="message" rows="10" cols="50" placeholder="Please start your typing here..."></textarea><br>
+          <button id="submit" type="submit"> Submit </button></form>
+      </footer>
+     </body>
+    </html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
